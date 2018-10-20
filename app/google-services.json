@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "171221212240",
+    "firebase_url": "https://farmhouse-16e97.firebaseio.com",
+    "project_id": "farmhouse-16e97",
+    "storage_bucket": "farmhouse-16e97.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171221212240:android:a510f0c42dfa4ce9",
+        "android_client_info": {
+          "package_name": "com.farmhouse.farmhouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171221212240-fq9ne0aai3531nn0843cc0mtmce891m4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAusgmSu3WDFhv4iOKkt70cXvb1naQzWXg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
