@@ -13,7 +13,17 @@ public class home extends AppCompatActivity {
 
         Intent i = new Intent(home.this,Add.class);
         startActivity(i);
+
     }
+
+    public void prohome(View v)
+    {
+
+        Intent i = new Intent(home.this,profile.class);
+        startActivity(i);
+
+    }
+
 
 
 
