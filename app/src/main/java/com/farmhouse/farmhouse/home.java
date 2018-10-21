@@ -24,6 +24,10 @@ public class home extends AppCompatActivity {
 
     }
 
+    public void search(View view){
+        Intent i = new Intent (home.this, list.class);
+        startActivity(i);
+    }
 
 
 

@@ -41,7 +41,7 @@ public class editprofile extends AppCompatActivity {
     EditText editTextName, editTextPhone;
     ImageView imageview;
     Button button_save;
-    Uri profileimage;
+
 
     FirebaseAuth mAuth;
     FirebaseAuth.AuthStateListener mAuthstatelistener;
@@ -64,15 +64,19 @@ public class editprofile extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String name = editTextName.getText().toString();
+                String phone = editTextPhone.getText().toString();
             String userid = mAuth.getCurrentUser().getUid();
             DatabaseReference current = FirebaseDatabase.getInstance().getReference().child("Users").child(userid);
             Map newpost = new HashMap();
             newpost.put("Name",name);
+            newpost.put("Phone",phone);
+            newpost.put("UserID", userid);
+
 
             current.setValue(newpost);
-                Toast.makeText(editprofile.this, "Success", Toast.LENGTH_SHORT).show();
-
-
+              if(current.setValue(newpost).isSuccessful()) {
+                  Toast.makeText(editprofile.this, "Success", Toast.LENGTH_SHORT).show();
+              }
             }
         });
 
